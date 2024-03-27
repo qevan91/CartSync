@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {error} from "@angular/compiler-cli/src/transformers/util";
 
 @Component({
   selector: 'app-main-page',
@@ -7,6 +8,8 @@ import {Component, Input} from '@angular/core';
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.css'
 })
+
+
 export class MainPageComponent {
   @Input()
   clicks = 0;
